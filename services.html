@@ -11,10 +11,10 @@
 </head>
 <body>
     <!-- En-tête du site -->
-    <header>
+    <header role="banner">
         <div class="container">
             <h1>Services</h1>
-            <nav>
+            <nav role="navigation">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="apropos.html">À propos</a></li>
@@ -27,10 +27,10 @@
     </header>
 
     <!-- Section principale -->
-    <main>
-        <section id="services" class="services">
+    <main role="main">
+        <section id="services" class="services" aria-labelledby="services-heading">
             <div class="container">
-                <h2>Nos Services</h2>
+                <h2 id="services-heading">Nos Services</h2>
                 <div class="service-item">
                     <h3>Vente de produits en ligne</h3>
                     <p>Nous offrons une large gamme de produits disponibles à l'achat en ligne, allant des gadgets électroniques aux produits de santé et de bien-être.</p>
@@ -59,4 +59,17 @@
     </main>
 
     <!-- Pied de page du site -->
-    <footer class="foo
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2024 Carnavere. Tous droits réservés.</p>
+            <nav aria-label="Liens utiles">
+                <ul>
+                    <li><a href="privacy.html">Politique de confidentialité</a></li>
+                    <li><a href="terms.html">Conditions d'utilisation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
