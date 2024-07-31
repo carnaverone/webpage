@@ -5,7 +5,7 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #f8f8f2; /* Couleur du texte par défaut */
-    background: #1e1e1e; /* Fond de page noir */
+    background: #000000; /* Fond de page noir */
 }
 
 .container {
@@ -70,15 +70,15 @@ header nav ul li a {
 /* Sections */
 section {
     padding: 2rem 0;
-    margin: 1rem 0;
+    margin: 2rem 0;
     border: 2px solid #ffd700; /* Bordure or autour des sections */
     border-radius: 10px; /* Coins arrondis */
-    background: #2a2a2a; /* Fond gris foncé pour les sections */
+    background: #000000; /* Fond noir pour les sections */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Ombre plus sombre */
 }
 
 .gallery {
-    background: #2a2a2a; /* Fond gris foncé pour la galerie */
+    background: #000000; /* Fond noir pour la galerie */
 }
 
 .gallery-item {
@@ -101,7 +101,7 @@ section {
 
 /* Pied de page */
 .footer {
-    background: #333; /* Couleur de fond noir du pied de page */
+    background: #000000; /* Fond noir pour le pied de page */
     color: #f8f8f2; /* Couleur du texte clair du pied de page */
     padding: 1rem 0;
     text-align: center;
