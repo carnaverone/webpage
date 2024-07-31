@@ -29,13 +29,14 @@ a:hover {
 
 /* En-tête */
 header {
-    background: #333;
-    color: #fff;
+    background: #f4f4f4; /* Couleur de fond plus claire */
+    color: #333; /* Couleur du texte */
     padding: 1rem 0;
 }
 
 header h1 {
     text-align: center;
+    color: #333; /* Couleur du texte */
 }
 
 header nav ul {
@@ -50,7 +51,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #333;
 }
 
 /* Sections */
