@@ -1,0 +1,15 @@
+name: Security Scan
+
+on: [push, pull_request]
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run security scan
+      uses: github/codeql-action/analyze@v1
+      with:
+        category: 'security'
