@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2 {
-    color: #333; /* Couleur du texte des titres */
+    color: #333; /* Couleur du texte */
     text-align: center;
 }
 
@@ -42,7 +42,7 @@ a:hover {
 /* En-tête */
 header {
     background: #e0c6e0; /* Fond mauve pâle */
-    color: #333; /* Couleur du texte de l'en-tête */
+    color: #333; /* Couleur du texte */
     padding: 1.5rem 0;
     border-bottom: 3px solid #b28cc8; /* Bordure inférieure */
 }
@@ -115,7 +115,7 @@ section {
 .footer .other-links p {
     display: inline-block;
     margin: 0 1rem;
-    color: #fff; /* Couleur des liens dans le pied de page */
+    color: #fff; /* Couleur des liens */
 }
 
 .footer .social-links a:hover,
