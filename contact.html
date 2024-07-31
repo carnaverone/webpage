@@ -34,15 +34,15 @@
                 <form action="#" method="post">
                     <div class="form-group">
                         <label for="name">Nom :</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required aria-label="Nom">
                     </div>
                     <div class="form-group">
                         <label for="email">Email :</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required aria-label="Email">
                     </div>
                     <div class="form-group">
                         <label for="message">Message :</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <textarea id="message" name="message" rows="5" required aria-label="Message"></textarea>
                     </div>
                     <button type="submit" class="btn">Envoyer</button>
                 </form>
@@ -51,7 +51,7 @@
     </main>
 
     <!-- Pied de page du site -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Nom du Site. Tous droits réservés.</p>
         </div>
