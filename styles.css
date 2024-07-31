@@ -1,11 +1,11 @@
 /* Styles généraux */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background: #f4f4f4;
+    background: #f4f4f4; /* Fond de page */
 }
 
 .container {
@@ -15,30 +15,43 @@ body {
 }
 
 h1, h2 {
-    color: #332e2f;
+    color: #333; /* Couleur du texte */
+    text-align: center;
+}
+
+/* Style de police pour les titres */
+h1 {
+    font-family: 'Georgia', serif; /* Police stylée pour le titre */
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: 'Georgia', serif; /* Police stylée pour les sous-titres */
+    font-size: 2rem;
 }
 
 a {
-    color: #333;
+    color: #333; /* Couleur des liens */
     text-decoration: none;
 }
 
 a:hover {
-    color: #332e2f;
+    color: #555; /* Couleur des liens au survol */
 }
 
 /* En-tête */
 header {
-    background: #f4f4f4; /* Couleur de fond plus claire */
-    color: #8022; /* Couleur du texte */
-    padding: 1rem 0;
+    background: #e0c6e0; /* Fond mauve pâle */
+    color: #333; /* Couleur du texte */
+    padding: 1.5rem 0;
+    border-bottom: 3px solid #b28cc8; /* Bordure inférieure */
 }
 
 header h1 {
-    text-align: center;
-    color: #8022; /* Couleur du texte */
+    margin: 0;
 }
 
+/* Navigation */
 header nav ul {
     padding: 0;
     list-style: none;
@@ -47,16 +60,21 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 
 header nav ul li a {
-    color: #333;
+    color: #333; /* Couleur des liens de navigation */
 }
 
 /* Sections */
 section {
     padding: 2rem 0;
+    margin: 1rem 0;
+    border: 2px solid #b28cc8; /* Bordure des sections */
+    border-radius: 10px; /* Coins arrondis */
+    background: #fff; /* Fond blanc */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre */
 }
 
 .hero {
@@ -67,13 +85,11 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px; /* Coins arrondis */
 }
 
 .about, .services, .gallery, .contact {
-    background: #fff;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 10px;
+    /* Styles déjà appliqués ci-dessus */
 }
 
 .gallery-item {
@@ -110,35 +126,37 @@ form {
 
 .form-group input, .form-group textarea {
     padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #ccc; /* Bordure des champs de formulaire */
+    border-radius: 5px; /* Coins arrondis */
     width: 100%;
 }
 
 /* Boutons */
 .btn {
     display: inline-block;
-    background: #333;
-    color: #fff;
+    background: #b28cc8; /* Couleur de fond des boutons */
+    color: #fff; /* Couleur du texte des boutons */
     padding: 0.75rem 1.25rem;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+    transition: background 0.3s ease; /* Transition pour effet au survol */
 }
 
 .btn:hover {
-    background: #555;
+    background: #9b6fa0; /* Couleur au survol */
 }
 
 /* Pied de page */
 footer {
-    background: #333;
-    color: #fff;
+    background: #333; /* Fond sombre */
+    color: #fff; /* Couleur du texte */
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .container {
         width: 95%;
