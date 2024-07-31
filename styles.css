@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: url('/home/carn/Documents/html/le site web/image/1.png') no-repeat center center fixed;
+    background: url('image/1.png') no-repeat center center fixed;
     background-size: cover;
     color: #333;
 }
@@ -14,7 +14,7 @@ body {
     width: 80%;
     margin: auto;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.9); /* Légère transparence pour contraster avec le fond */
+    background: rgba(255, 250, 250, 0.1); /* Légère transparence pour contraster avec le fond */
     padding: 20px;
 }
 
