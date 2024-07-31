@@ -6,10 +6,20 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Run security scan
-      uses: github/codeql-action/analyze@v1
-      with:
-        category: 'security'
+      - name: Setup CodeQL
+        uses: github/codeql-action/setup@v1
+        with:
+          languages: javascript, python  # Spécifiez les langages utilisés dans votre projet
+
+      - name: Run CodeQL analysis
+        uses: github/codeql-action/analyze@v1
+        with:
+          category: 'security'
+
+      - name: Upload CodeQL results
+        uses: github/codeql-action/upload-results@v1
+        with:
+          category: 'security'
