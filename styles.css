@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2 {
-    color: #333;
+    color: #332e2f;
 }
 
 a {
@@ -24,19 +24,19 @@ a {
 }
 
 a:hover {
-    color: #555;
+    color: #332e2f;
 }
 
 /* En-tête */
 header {
     background: #f4f4f4; /* Couleur de fond plus claire */
-    color: #333; /* Couleur du texte */
+    color: #8022; /* Couleur du texte */
     padding: 1rem 0;
 }
 
 header h1 {
     text-align: center;
-    color: #333; /* Couleur du texte */
+    color: #8022; /* Couleur du texte */
 }
 
 header nav ul {
