@@ -99,43 +99,26 @@ section {
     transform: scale(1.05);
 }
 
-/* Formulaire */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-.form-group label {
-    margin-bottom: 0.5rem;
-}
-
-.form-group input, .form-group textarea {
-    padding: 0.5rem;
-    border: 1px solid #ccc; /* Bordure des champs de formulaire */
-    border-radius: 5px; /* Coins arrondis */
+/* Pied de page */
+.footer {
+    background: #333; /* Couleur de fond du pied de page */
+    color: #fff; /* Couleur du texte du pied de page */
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
 }
 
-/* Boutons */
-.btn {
+.footer .social-links a,
+.footer .other-links p {
     display: inline-block;
-    background: #b28cc8; /* Couleur de fond des boutons */
-    color: #fff; /* Couleur du texte des boutons */
-    padding: 0.75rem 1.25rem;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    transition: background 0.3s ease; /* Transition pour effet au survol */
+    margin: 0 1rem;
+    color: #fff; /* Couleur des liens */
 }
 
-.btn:hover {
-    background: #9b6fa0; /* Couleur au survol */
+.footer .social-links a:hover,
+.footer .other-links p:hover {
+    text-decoration: underline; /* Soulignement au survol */
 }
-
-/* Pied de page */
-.footer {
-    background: #333;
