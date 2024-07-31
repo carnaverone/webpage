@@ -39,6 +39,10 @@ a:hover {
     color: #555; /* Couleur des liens au survol */
 }
 
+a:focus {
+    outline: 2px solid #b28cc8; /* Contour pour l'accessibilité */
+}
+
 /* En-tête */
 header {
     background: #e0c6e0; /* Fond mauve pâle */
@@ -81,10 +85,15 @@ section {
     background: #fff; /* Fond blanc pour la galerie */
 }
 
+.gallery-grid {
+    display: flex; /* Utilisation de flexbox pour la galerie */
+    flex-wrap: wrap; /* Permet le passage à la ligne */
+    justify-content: center; /* Centre les éléments */
+}
+
 .gallery-item {
-    display: inline-block;
-    width: 30%;
-    margin: 1%;
+    flex: 1 1 30%; /* Trois éléments par ligne */
+    margin: 1%; /* Espacement entre les éléments */
     text-align: center;
 }
 
@@ -105,10 +114,8 @@ section {
     color: #fff; /* Couleur du texte du pied de page */
     padding: 1rem 0;
     text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    position: relative; /* Modifié pour un meilleur affichage */
+    margin-top: 2rem; /* Ajout d'une marge pour séparer du contenu */
 }
 
 .footer .social-links a,
@@ -174,7 +181,9 @@ textarea:focus {
 
 .btn:hover {
     background-color: #555; /* Couleur de fond au survol */
+    transition: background-color 0.3s ease; /* Ajout d'une transition */
 }
+
 .apropos {
     padding: 2rem 0; /* Espacement autour de la section */
 }
@@ -198,4 +207,3 @@ textarea:focus {
 h2, h3, h4 {
     margin-bottom: 1rem; /* Espacement sous les titres */
 }
-
