@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <meta name="description" content="Page de contact pour nous envoyer un message">
+    <meta name="description" content="Page de contact pour nous envoyer un message et nous poser vos questions.">
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- En-tête du site -->
-    <header>
+    <header role="banner">
         <div class="container">
             <h1>Contact</h1>
-            <nav>
+            <nav role="navigation">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="apropos.html">À propos</a></li>
@@ -27,11 +27,11 @@
     </header>
 
     <!-- Section principale -->
-    <main>
-        <section id="contact" class="contact">
+    <main role="main">
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
             <div class="container">
-                <h2>Contactez-nous</h2>
-                <form action="#" method="post">
+                <h2 id="contact-heading">Contactez-nous</h2>
+                <form action="#" method="post" aria-label="Formulaire de contact">
                     <div class="form-group">
                         <label for="name">Nom :</label>
                         <input type="text" id="name" name="name" required aria-label="Nom">
@@ -51,9 +51,16 @@
     </main>
 
     <!-- Pied de page du site -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <p>&copy; 2024 Nom du Site. Tous droits réservés.</p>
+            <nav aria-label="Liens utiles">
+                <ul>
+                    <li><a href="privacy.html">Politique de confidentialité</a></li>
+                    <li><a href="terms.html">Conditions d'utilisation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
 </body>
