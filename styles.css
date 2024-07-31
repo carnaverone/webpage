@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333; /* Couleur du texte par défaut */
-    background: #f4f4f4; /* Fond de page */
+    color: #f8f8f2; /* Couleur du texte par défaut */
+    background: #1e1e1e; /* Fond de page noir */
 }
 
 .container {
@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2 {
-    color: #333; /* Couleur du texte */
+    color: #ffd700; /* Couleur or pour les titres */
     text-align: center;
 }
 
@@ -31,24 +31,20 @@ h2 {
 }
 
 a {
-    color: #333; /* Couleur des liens */
+    color: #ffd700; /* Couleur or pour les liens */
     text-decoration: none;
 }
 
 a:hover {
-    color: #555; /* Couleur des liens au survol */
-}
-
-a:focus {
-    outline: 2px solid #b28cc8; /* Contour pour l'accessibilité */
+    color: #ffcc00; /* Couleur or clair au survol */
 }
 
 /* En-tête */
 header {
-    background: #e0c6e0; /* Fond mauve pâle */
-    color: #333; /* Couleur du texte */
+    background: #333; /* Fond noir pour l'en-tête */
+    color: #f8f8f2; /* Couleur du texte clair */
     padding: 1.5rem 0;
-    border-bottom: 3px solid #b28cc8; /* Bordure inférieure */
+    border-bottom: 3px solid #ffd700; /* Bordure inférieure or */
 }
 
 header h1 {
@@ -68,32 +64,27 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #333; /* Couleur des liens de navigation */
+    color: #ffd700; /* Couleur des liens de navigation */
 }
 
 /* Sections */
 section {
     padding: 2rem 0;
     margin: 1rem 0;
-    border: 2px solid #b28cc8; /* Bordure des sections */
+    border: 2px solid #ffd700; /* Bordure or autour des sections */
     border-radius: 10px; /* Coins arrondis */
-    background: #fff; /* Fond blanc pour les sections */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre */
+    background: #2a2a2a; /* Fond gris foncé pour les sections */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Ombre plus sombre */
 }
 
 .gallery {
-    background: #fff; /* Fond blanc pour la galerie */
-}
-
-.gallery-grid {
-    display: flex; /* Utilisation de flexbox pour la galerie */
-    flex-wrap: wrap; /* Permet le passage à la ligne */
-    justify-content: center; /* Centre les éléments */
+    background: #2a2a2a; /* Fond gris foncé pour la galerie */
 }
 
 .gallery-item {
-    flex: 1 1 30%; /* Trois éléments par ligne */
-    margin: 1%; /* Espacement entre les éléments */
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
     text-align: center;
 }
 
@@ -110,19 +101,21 @@ section {
 
 /* Pied de page */
 .footer {
-    background: #333; /* Couleur de fond du pied de page */
-    color: #fff; /* Couleur du texte du pied de page */
+    background: #333; /* Couleur de fond noir du pied de page */
+    color: #f8f8f2; /* Couleur du texte clair du pied de page */
     padding: 1rem 0;
     text-align: center;
-    position: relative; /* Modifié pour un meilleur affichage */
-    margin-top: 2rem; /* Ajout d'une marge pour séparer du contenu */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer .social-links a,
 .footer .other-links p {
     display: inline-block;
     margin: 0 1rem;
-    color: #fff; /* Couleur des liens */
+    color: #ffd700; /* Couleur or pour les liens */
 }
 
 .footer .social-links a:hover,
@@ -139,12 +132,12 @@ section {
     border: 1px solid #ddd; /* Bordure autour des éléments de service */
     border-radius: 8px; /* Coins arrondis */
     padding: 1rem; /* Espacement intérieur */
-    background-color: #f9f9f9; /* Fond gris clair pour les éléments de service */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre */
+    background-color: #3a3a3a; /* Fond gris pour les éléments de service */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Ombre plus sombre */
 }
 
 .service-item h3 {
-    color: #333; /* Couleur du titre de service */
+    color: #ffd700; /* Couleur or pour le titre de service */
 }
 
 .contact {
@@ -167,12 +160,12 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border-color: #333; /* Couleur de bordure au focus */
+    border-color: #ffd700; /* Couleur de bordure or au focus */
 }
 
 .btn {
-    background-color: #333; /* Couleur de fond du bouton */
-    color: #fff; /* Couleur du texte du bouton */
+    background-color: #ffd700; /* Couleur or pour le bouton */
+    color: #1e1e1e; /* Couleur du texte noir pour le bouton */
     padding: 0.7rem 1.5rem; /* Espacement intérieur */
     border: none; /* Pas de bordure */
     border-radius: 4px; /* Coins arrondis */
@@ -180,8 +173,7 @@ textarea:focus {
 }
 
 .btn:hover {
-    background-color: #555; /* Couleur de fond au survol */
-    transition: background-color 0.3s ease; /* Ajout d'une transition */
+    background-color: #ffcc00; /* Couleur or clair au survol */
 }
 
 .apropos {
