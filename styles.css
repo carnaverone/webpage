@@ -175,3 +175,27 @@ textarea:focus {
 .btn:hover {
     background-color: #555; /* Couleur de fond au survol */
 }
+.apropos {
+    padding: 2rem 0; /* Espacement autour de la section */
+}
+
+.team {
+    display: flex; /* Utilise le flexbox pour aligner les membres de l'équipe */
+    flex-wrap: wrap; /* Permet le passage à la ligne pour les petits écrans */
+    gap: 2rem; /* Espacement entre les membres de l'équipe */
+}
+
+.team-member {
+    flex: 1 1 calc(30% - 2rem); /* Trois membres par ligne avec une marge */
+    text-align: center; /* Centre le texte */
+}
+
+.team-member img {
+    max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur */
+    border-radius: 50%; /* Arrondi les bords pour un aspect de photo de profil */
+}
+
+h2, h3, h4 {
+    margin-bottom: 1rem; /* Espacement sous les titres */
+}
+
