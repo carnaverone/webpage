@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom du Site</title>
+    <meta name="description" content="Description de votre site web">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête du site -->
+    <header>
+        <div class="container">
+            <h1>Nom du Site</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Bienvenue sur notre site web</h2>
+                <p>Découvrez nos services et produits exceptionnels.</p>
+                <a href="#about" class="btn">En savoir plus</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>À propos de nous</h2>
+                <p>Nous sommes une entreprise dédiée à fournir des services de qualité.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Nos Services</h2>
+                <div class="service-item">
+                    <h3>Service 1</h3>
+                    <p>Description du service 1.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Service 2</h3>
+                    <p>Description du service 2.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Service 3</h3>
+                    <p>Description du service 3.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2>Galerie</h2>
+                <div class="gallery-item">
+                    <a href="https://www.pictorem.com/gallery/Francesco.Carnaverone"><img src="image/2.png" alt="gallery tableaux"></a>
+                </div>
+                <div class="gallery-item">
+                    <a href="https://www.redbubble.com/people/carnaverone/shop?asc=u"><img src="image/3.png" alt="gallery objet"></a>
+                </div>
+                <div class="gallery-item">
+                    <a href="lien3.html"><img src="image/1.png" alt="Description de l'image 3"></a>
+                </div>
+                <div class="gallery-item">
+                    <a href="https://www.redbubble.com/people/carnaverone/shop?asc=u"><img src="image/3.png" alt="gallery objet"></a>
+                </div>
+                <div class="gallery-item">
+                    <a href="lien3.html"><img src="image/1.png" alt="Description de l'image 3"></a>
+                </div>
+                <div class="gallery-item">
+                    <a href="https://www.redbubble.com/people/carnaverone/shop?asc=u"><img src="image/3.png" alt="gallery objet"></a>
+                </div>
+                <div class="gallery-item">
+                    <a href="lien3.html"><img src="image/1.png" alt="Description de l'image 3"></a>
+                </div>
+                <!-- Ajoutez plus d'images ici -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contactez-nous</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page du site -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nom du Site. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
