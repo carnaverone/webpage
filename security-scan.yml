@@ -1,14 +1,21 @@
 name: Security Scan
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main  # Spécifiez les branches pour lesquelles vous souhaitez exécuter le scan
+  pull_request:
+    branches:
+      - main  # Spécifiez les branches cibles pour les pull requests
 
 jobs:
   security:
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
+        
       - name: Setup CodeQL
         uses: github/codeql-action/setup@v1
         with:
@@ -18,8 +25,11 @@ jobs:
         uses: github/codeql-action/analyze@v1
         with:
           category: 'security'
+          output: 'results'  # Spécifiez le chemin de sortie si nécessaire
 
       - name: Upload CodeQL results
         uses: github/codeql-action/upload-results@v1
         with:
           category: 'security'
+          format: 'sarif'  # Spécifiez le format d'exportation si nécessaire
+
