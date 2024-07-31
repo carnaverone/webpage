@@ -140,3 +140,38 @@ section {
     color: #333; /* Couleur du titre de service */
 }
 
+.contact {
+    padding: 2rem 0; /* Espacement autour de la section */
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Espacement entre les champs du formulaire */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Largeur pleine */
+    padding: 0.5rem; /* Espacement intérieur */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 4px; /* Coins arrondis */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #333; /* Couleur de bordure au focus */
+}
+
+.btn {
+    background-color: #333; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    padding: 0.7rem 1.5rem; /* Espacement intérieur */
+    border: none; /* Pas de bordure */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Pointeur au survol */
+}
+
+.btn:hover {
+    background-color: #555; /* Couleur de fond au survol */
+}
