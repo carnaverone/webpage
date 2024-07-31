@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>carnastore</title>
-    <meta name="description" content="carnastore online store">
+    <title>Accueil</title>
+    <meta name="description" content="Bienvenue sur notre site. Découvrez nos produits et services.">
     <meta name="robots" content="index, follow">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Carnavere">
+    <meta name="theme-color" content="#000000"> <!-- Couleur de la barre d'adresse -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json"> <!-- Liens vers le manifeste pour PWA -->
 </head>
 <body>
     <!-- En-tête du site -->
     <header>
         <div class="container">
-            <h1>La boutique CARNASTORE<br>(en construction) revenez nous voir bientôt !</h1>
+            <h1>Bienvenue sur notre site</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="gallery.html">Galerie</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" class="current">Accueil</a></li>
                     <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,57 +30,52 @@
 
     <!-- Section principale -->
     <main>
-        <section id="gallery" class="gallery">
-            <div class="container">
-                <h2>Galerie</h2>
-                <div class="gallery-item">
-                    <a href="https://www.pictorem.com/gallery/Francesco.Carnaverone"><img src="2.png" alt="Tableau de Francesco Carnaverone"></a>
-                </div>
-                <div class="gallery-item">
-                    <a href="https://www.redbubble.com/people/carnaverone/shop?asc=u"><img src="3.png" alt="Objet décoratif"></a>
-                </div>
-                <div class="gallery-item">
-                    <a href="lien3.html"><img src="image/1.png" alt="Description de l'image 3"></a>
-                </div>
-                <!-- Ajoutez plus d'images ici -->
-            </div>
-        </section>
-
-        <section id="services" class="services">
+        <section id="accueil">
             <div class="container">
                 <h2>Nos Services</h2>
-                <div class="service-item">
-                    <h3>Service 1</h3>
-                    <p>Description du service 1.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Service 2</h3>
-                    <p>Description du service 2.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Service 3</h3>
-                    <p>Description du service 3.</p>
+                <p>Découvrez nos produits et services haut de gamme qui répondent à vos besoins.</p>
+                <div class="services">
+                    <div class="service-item">
+                        <h3>Service 1</h3>
+                        <p>Description du service 1.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Service 2</h3>
+                        <p>Description du service 2.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Service 3</h3>
+                        <p>Description du service 3.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Pied de page fixe élargi -->
-    <footer class="footer">
+    <!-- Pied de page du site -->
+    <footer>
         <div class="container">
             <p>&copy; 2024 Nom du Site. Tous droits réservés.</p>
             <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-            </div>
-            <div class="other-links">
-                <p><a href="#">Politique de confidentialité</a></p>
-                <p><a href="#">Conditions d'utilisation</a></p>
-                <p>Ajoutez votre texte ou vos liens ici.</p>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
             </div>
         </div>
     </footer>
+
+    <!-- Service Worker pour la PWA -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(registration => {
+                        console.log('Service Worker enregistré avec succès:', registration);
+                    })
+                    .catch(error => {
+                        console.error('Échec de l\'enregistrement du Service Worker:', error);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
