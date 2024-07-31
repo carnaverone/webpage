@@ -1,197 +1,160 @@
-/* CSS de base pour la mise en page et le style */
-
+/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: url('image/1.png') no-repeat center center fixed;
-    background-size: cover;
     color: #333;
+    background: #f4f4f4;
 }
 
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
-    background: rgba(255, 250, 250, 0.1); /* Légère transparence pour contraster avec le fond */
-    padding: 20px;
 }
 
+h1, h2 {
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555;
+}
+
+/* En-tête */
 header {
     background: #333;
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #77d4d0 3px solid;
+    padding: 1rem 0;
 }
 
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
+header h1 {
+    text-align: center;
 }
 
-header ul {
+header nav ul {
     padding: 0;
     list-style: none;
+    text-align: center;
 }
 
-header li {
+header nav ul li {
     display: inline;
-    padding: 0 20px 0 20px;
+    margin: 0 1rem;
 }
 
-header #branding {
-    float: left;
+header nav ul li a {
+    color: #fff;
 }
 
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-header .highlight, header .current a {
-    color: #77d4d0;
-    font-weight: bold;
-}
-
-header a:hover {
-    color: #cccccc;
+/* Sections */
+section {
+    padding: 2rem 0;
 }
 
 .hero {
-    background: rgba(255, 255, 255, 0.8);
-    color: #333;
-    padding: 100px 0;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
     text-align: center;
-}
-
-.hero h2 {
-    margin: 0;
-    font-size: 40px;
-    text-transform: uppercase;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about, .services, .gallery, .contact {
-    padding: 30px 0;
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.gallery-item {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
     text-align: center;
-    background: rgba(255, 255, 255, 0.9); /* Légère transparence pour contraster avec le fond */
-}
-
-.about p, .services p, .contact p {
-    font-size: 18px;
-}
-
-.service-item, .gallery-item {
-    padding: 20px;
 }
 
 .gallery-item img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border: 5px solid #333;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+/* Pied de page */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 30px 0;
-    margin-top: 30px;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
 
-footer p {
-    margin: 0;
-}
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
 
-.btn {
-    display: inline-block;
-    color: #fff;
-    background: #333;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    border-radius: 5px;
-    text-decoration: none;
-}
+    header nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
 
-.btn:hover {
-    background: #77d4d0;
-    color: #333;
-}
+    .gallery-item {
+        width: 100%;
+        margin: 1rem 0;
+    }
 
-form .form-group {
-    margin-bottom: 15px;
+    .hero {
+        height: auto;
+        padding: 2rem 1rem;
+    }
 }
-
-form .form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form .form-group input, form .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form .form-group input[type="submit"] {
-    background: #333;
-    color: #fff;
-    border: none;
-    padding: 15px 20px;
-    cursor: pointer;
-}
-
-form .form-group input[type="submit"]:hover {
-    background: #77d4d0;
-}
-/* Styles pour la section À propos */
-
-.about {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.about h2, .about h3 {
-    color: #333;
-}
-
-.about p {
-    color: #666;
-}
-
-.about ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    color: #666;
-}
-
-.team-member {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.team-member img {
-    border-radius: 50%;
-    margin-right: 20px;
-    width: 100px;
-    height: 100px;
-}
-
-.team-member h4 {
-    margin: 0;
-    color: #333;
-}
-
-.team-member p {
-    margin: 0;
-    color: #666;
-}
-
-/* Autres styles restent inchangés */
