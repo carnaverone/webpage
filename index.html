@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>carnastore</title>
-    <meta name="carnastore online store" content="carnastore online">
+    <meta name="description" content="Découvrez nos services et produits exceptionnels chez CARNASTORE.">
+    <meta name="keywords" content="boutique, services, produits, CARNASTORE">
+    <meta name="author" content="Nom de l'auteur">
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self';">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- En-tête du site -->
     <header>
         <div class="container">
-            <h1>La boutique CARNASTORE<br> (en construction) revenez nous voir bîento! </h1>
+            <h1>La boutique CARNASTORE<br> (en construction) revenez nous voir bientôt !</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
@@ -73,18 +76,6 @@
                 <div class="gallery-item">
                     <a href="lien3.html"><img src="image/1.png" alt="Description de l'image 3"></a>
                 </div>
-                <div class="gallery-item">
-                    <a href="https://www.redbubble.com/people/carnaverone/shop?asc=u"><img src="3.png" alt="gallery objet"></a>
-                </div>
-                <div class="gallery-item">
-                    <a href="lien3.html"><img src="image/1.png" alt="Description de l'image 3"></a>
-                </div>
-                <div class="gallery-item">
-                    <a href="https://www.redbubble.com/people/carnaverone/shop?asc=u"><img src="/image/3.png" alt="gallery objet"></a>
-                </div>
-                <div class="gallery-item">
-                    <a href="lien3.html"><img src="image/1.png" alt="Description de l'image 3"></a>
-                </div>
                 <!-- Ajoutez plus d'images ici -->
             </div>
         </section>
@@ -93,6 +84,9 @@
             <div class="container">
                 <h2>Contactez-nous</h2>
                 <form action="#" method="post">
+                    <div style="display:none;">
+                        <input type="text" name="honeypot" value="">
+                    </div>
                     <div class="form-group">
                         <label for="name">Nom :</label>
                         <input type="text" id="name" name="name" required>
@@ -117,5 +111,31 @@
             <p>&copy; 2024 Nom du Site. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({
+                        behavior: "smooth"
+                    });
+                });
+            });
+        });
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+                console.log('Service Worker registered with scope:', registration.scope);
+            }).catch(function(error) {
+                console.log('Service Worker registration failed:', error);
+            });
+        }
+    </script>
 </body>
 </html>
