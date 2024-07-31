@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie</title>
-    <meta name="description" content="Galerie d'images avec des liens">
+    <meta name="description" content="Galerie d'images avec des liens. Découvrez notre collection d'images inspirantes.">
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- En-tête du site -->
-    <header>
+    <header role="banner">
         <div class="container">
             <h1>Galerie</h1>
-            <nav>
+            <nav role="navigation">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="apropos.html">À propos</a></li>
@@ -27,10 +27,10 @@
     </header>
 
     <!-- Section principale -->
-    <main>
-        <section id="gallery" class="gallery">
+    <main role="main">
+        <section id="gallery" class="gallery" aria-labelledby="gallery-heading">
             <div class="container">
-                <h2>Galerie</h2>
+                <h2 id="gallery-heading">Galerie</h2>
                 <div class="gallery-grid">
                     <!-- Exemple de cadre pour une image avec un lien -->
                     <div class="gallery-item">
@@ -49,9 +49,16 @@
     </main>
 
     <!-- Pied de page du site -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <p>&copy; 2024 Nom du Site. Tous droits réservés.</p>
+            <nav aria-label="Liens utiles">
+                <ul>
+                    <li><a href="privacy.html">Politique de confidentialité</a></li>
+                    <li><a href="terms.html">Conditions d'utilisation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
 </body>
