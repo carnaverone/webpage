@@ -77,19 +77,8 @@ section {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre */
 }
 
-.hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px; /* Coins arrondis */
-}
-
-.about, .services, .gallery, .contact {
-    /* Styles déjà appliqués ci-dessus */
+.gallery {
+    background: #fff; /* Fond blanc pour la galerie */
 }
 
 .gallery-item {
@@ -148,32 +137,5 @@ form {
 }
 
 /* Pied de page */
-footer {
-    background: #333; /* Fond sombre */
-    color: #fff; /* Couleur du texte */
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-
-    header nav ul li {
-        display: block;
-        margin: 0.5rem 0;
-    }
-
-    .gallery-item {
-        width: 100%;
-        margin: 1rem 0;
-    }
-
-    .hero {
-        height: auto;
-        padding: 2rem 1rem;
-    }
-}
+.footer {
+    background: #333;
