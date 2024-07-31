@@ -11,10 +11,10 @@
 </head>
 <body>
     <!-- En-tête du site -->
-    <header>
+    <header role="banner">
         <div class="container">
             <h1>À propos</h1>
-            <nav>
+            <nav role="navigation">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="apropos.html" class="current">À propos</a></li>
@@ -27,10 +27,10 @@
     </header>
 
     <!-- Section principale -->
-    <main>
-        <section id="apropos" class="apropos">
+    <main role="main">
+        <section id="apropos" class="apropos" aria-labelledby="apropos-heading">
             <div class="container">
-                <h2>À propos de nous</h2>
+                <h2 id="apropos-heading">À propos de nous</h2>
                 <p>Bienvenue sur notre site web. Nous sommes une entreprise dédiée à fournir des produits et des services de haute qualité. Notre mission est de répondre aux besoins de nos clients avec excellence et professionnalisme.</p>
                 
                 <h3>Nos valeurs</h3>
@@ -48,4 +48,36 @@
                     <div class="team-member">
                         <img src="team1.jpg" alt="Nom du Membre 1" aria-label="Nom du Membre 1">
                         <h4>Nom du Membre 1</h4>
-  
+                        <p>Poste ou description du membre 1.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="team2.jpg" alt="Nom du Membre 2" aria-label="Nom du Membre 2">
+                        <h4>Nom du Membre 2</h4>
+                        <p>Poste ou description du membre 2.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="team3.jpg" alt="Nom du Membre 3" aria-label="Nom du Membre 3">
+                        <h4>Nom du Membre 3</h4>
+                        <p>Poste ou description du membre 3.</p>
+                    </div>
+                    <!-- Ajoutez d'autres membres de l'équipe si nécessaire -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page du site -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2024 Nom du Site. Tous droits réservés.</p>
+            <nav aria-label="Liens utiles">
+                <ul>
+                    <li><a href="privacy.html">Politique de confidentialité</a></li>
+                    <li><a href="terms.html">Conditions d'utilisation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
