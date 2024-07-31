@@ -122,3 +122,21 @@ section {
 .footer .other-links p:hover {
     text-decoration: underline; /* Soulignement au survol */
 }
+
+.services {
+    padding: 2rem 0; /* Espacement autour de la section */
+}
+
+.service-item {
+    margin-bottom: 2rem; /* Espacement entre les éléments de service */
+    border: 1px solid #ddd; /* Bordure autour des éléments de service */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 1rem; /* Espacement intérieur */
+    background-color: #f9f9f9; /* Fond gris clair pour les éléments de service */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre */
+}
+
+.service-item h3 {
+    color: #333; /* Couleur du titre de service */
+}
+
