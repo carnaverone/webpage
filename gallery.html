@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie</title>
-    <meta name="description" content="Galerie d'images avec des liens. Découvrez notre collection d'images inspirantes.">
+    <title>Accueil</title>
+    <meta name="description" content="Bienvenue sur notre site. Découvrez nos services et notre galerie.">
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
@@ -13,13 +13,13 @@
     <!-- En-tête du site -->
     <header role="banner">
         <div class="container">
-            <h1>Galerie</h1>
+            <h1>Accueil</h1>
             <nav role="navigation">
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html" class="current">Accueil</a></li>
                     <li><a href="apropos.html">À propos</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html" class="current">Galerie</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -31,28 +31,20 @@
         <section id="gallery" class="gallery" aria-labelledby="gallery-heading">
             <div class="container">
                 <h2 id="gallery-heading">Galerie</h2>
-                <div class="gallery-grid">
-                    <!-- Exemple de cadre pour une image avec un lien -->
-                    <div class="gallery-item">
-                        <a href="https://www.redbubble.com/people/carnaverone/shop?asc=u"><img src="1.png" alt="object"></a>
-                    </div>
-                    <div class="gallery-item">
-                        <a href="https://www.pictorem.com/gallery/Francesco.Carnaverone"><img src="2.png" alt="tableaux"></a>
-                    </div>
-                    <div class="gallery-item">
-                        <a href="lien3.html"><img src="3.png" alt="Description détaillée de l'image 3"></a>
-                    </div>
-                     <div class="gallery-item">
-                        <a href="https://www.redbubble.com/people/carnaverone/shop?asc=u"><img src="1.png" alt="object"></a>
-                    </div>
-                    <div class="gallery-item">
-                        <a href="https://www.pictorem.com/gallery/Francesco.Carnaverone"><img src="2.png" alt="tableaux"></a>
-                    </div>
-                    <div class="gallery-item">
-                        <a href="lien3.html"><img src="3.png" alt="Description détaillée de l'image 3"></a>
-                    </div>
-                    <!-- Ajoutez plus d'images ici -->
+                <div class="gallery">
+                    <img src="image1.jpg" alt="Image 1">
+                    <img src="image2.jpg" alt="Image 2">
+                    <img src="image3.jpg" alt="Image 3">
+                    <!-- Ajoutez d'autres images si nécessaire -->
                 </div>
+            </div>
+        </section>
+
+        <section id="services" class="services" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading">Nos Services</h2>
+                <p>Nous offrons une gamme de services pour répondre à vos besoins.</p>
+                <!-- Détails des services -->
             </div>
         </section>
     </main>
