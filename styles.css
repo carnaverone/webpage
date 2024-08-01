@@ -31,7 +31,7 @@ h2 {
 }
 
 a {
-    color: #f8f8f2; /* Couleur or pour les liens */
+    color: #ffd700; /* Couleur or pour les liens */
     text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ a:hover {
 /* En-tête */
 header {
     background: #333; /* Fond noir pour l'en-tête */
-    color: #f8f8f2; /* Couleur du texte clair */
+    color: #ffd700; /* Couleur du texte clair */
     padding: 1.5rem 0;
     border-bottom: 3px solid #ffd700; /* Bordure inférieure or */
 }
@@ -102,7 +102,7 @@ section {
 /* Pied de page */
 .footer {
     background: #333; /* Couleur de fond noir du pied de page */
-    color: #f8f8f2; /* Couleur du texte clair du pied de page */
+    color: #ffd700; /* Couleur du texte clair du pied de page */
     padding: 1rem 0;
     text-align: center;
     position: fixed;
