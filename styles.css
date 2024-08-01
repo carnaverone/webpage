@@ -1,149 +1,166 @@
-/* Styles généraux */
-body {
-    font-family: 'Arial', sans-serif;
+/* styles.css */
+
+/* Général */
+body, html {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #f8f8f2; /* Couleur du texte par défaut */
-    background: url('images/1.png') no-repeat center center fixed; /* Image de fond fixe */
-    background-size: cover; /* Redimensionne l'image de fond pour couvrir toute la page */
+    font-family: Arial, sans-serif;
+    background: url('1.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
 }
 
 .container {
     width: 80%;
-    margin: auto;
-    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-h1, h2 {
-    color: #ffd700; /* Couleur or pour les titres */
-    text-align: center;
-}
-
-/* Style de police pour les titres */
-h1 {
-    font-family: 'Georgia', serif; /* Police stylée pour le titre */
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-family: 'Georgia', serif; /* Police stylée pour les sous-titres */
-    font-size: 2rem;
-}
-
-a {
-    color: #ffd700; /* Couleur or pour les liens */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #ffcc00; /* Couleur or clair au survol */
-}
-
-/* En-tête */
 header {
-    background: #333; /* Fond noir pour l'en-tête */
-    color: #f8f8f2; /* Couleur du texte clair */
-    padding: 1.5rem 0;
-    border-bottom: 3px solid #ffd700; /* Bordure inférieure or */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
 }
 
 header h1 {
     margin: 0;
-}
-
-/* Navigation */
-header nav ul {
     padding: 0;
-    list-style: none;
-    text-align: center;
+    font-size: 2em;
+    color: #FFD700;
 }
 
-header nav ul li {
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
     display: inline;
-    margin: 0 1.5rem;
+    margin-right: 20px;
 }
 
-header nav ul li a {
-    color: #ffd700; /* Couleur des liens de navigation */
+nav ul li a {
+    text-decoration: none;
+    color: #FFD700;
 }
 
-/* Sections */
-section {
-    padding: 2rem 0;
-    margin: 1rem 0;
-    border: 2px solid #ffd700; /* Bordure or autour des sections */
-    border-radius: 10px; /* Coins arrondis */
-    background: rgba(42, 42, 42, 0.85); /* Fond gris foncé translucide pour les sections */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Ombre portée */
+nav ul li a.current {
+    font-weight: bold;
+    border-bottom: 2px solid #FFD700;
 }
 
-/* Liste des valeurs */
-.apropos ul {
+/* Section principale */
+main {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+h2, h3 {
+    color: #FFD700;
+}
+
+p, ul {
+    line-height: 1.6;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Formulaire de contact */
+form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button.btn {
+    background-color: #FFD700;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Pied de page */
+.footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+    color: #FFD700;
+}
+
+.footer nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    color: #ffd700; /* Couleur or pour les puces de la liste */
 }
 
-.apropos ul li {
-    padding: 0.5rem 0;
-    margin: 0.5rem 0;
-    border-bottom: 1px solid #ffd700; /* Ligne de séparation or */
+.footer nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-/* Équipe */
+.footer nav ul li a {
+    text-decoration: none;
+    color: #FFD700;
+}
+
+/* Galerie */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+}
+
 .team {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .team-member {
-    flex-basis: 30%;
-    background: rgba(0, 0, 0, 0.7); /* Fond noir translucide */
-    padding: 1rem;
-    margin: 0.5rem;
-    border: 2px solid #ffd700; /* Bordure or */
-    border-radius: 10px; /* Coins arrondis */
+    flex: 1 1 30%;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .team-member img {
     width: 100%;
     height: auto;
-    border-radius: 50%; /* Image ronde pour les membres de l'équipe */
-    border: 2px solid #ffd700; /* Bordure or autour des images */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    border-radius: 10px;
+    border: 2px solid #FFD700;
 }
 
-/* Pied de page */
-footer {
-    background: #333; /* Fond noir pour le pied de page */
-    color: #f8f8f2; /* Couleur du texte clair */
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-    border-top: 3px solid #ffd700; /* Bordure supérieure or */
-}
-
-footer nav ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    margin: 1rem 0 0 0;
-}
-
-footer nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-footer nav ul li a {
-    color: #ffd700; /* Couleur des liens de navigation */
-}
-
-footer nav ul li a:hover {
-    color: #ffcc00; /* Couleur or clair au survol */
+.team-member h4 {
+    margin-top: 10px;
+    color: #FFD700;
 }
