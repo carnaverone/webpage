@@ -164,3 +164,21 @@ button.btn {
     margin-top: 10px;
     color: #FFD700;
 }
+
+/* Nouveau style pour les liens de produits */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+}
